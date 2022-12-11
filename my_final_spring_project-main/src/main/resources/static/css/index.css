@@ -1,0 +1,20 @@
+:root {
+    --color1: #05b1b1;
+    --color2: #52339a;
+}
+
+header, footer, section {
+    padding: 30px 0;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header, footer {
+    background: url(image/banner.png), var(--color1);
+    background: url(image/banner.png), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(image/banner.png), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(image/banner.png), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+    filter: url(image/banner.png), progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+}
